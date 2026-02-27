@@ -13,7 +13,10 @@
     STEP 2: Build the “top area” (site name + navigation) using simple HTML
     ========================================================= -->
 <header>
-  <p><strong>NYC Travel Guide</strong></p>
+  <div class="header-inner">
+   <p class="brand">
+      NYC Travel Guide <span class="dot">.</span>
+    </p>
   <nav>
     <ul>
       <li><a href="#highlights">Highlights</a></li>
@@ -22,50 +25,59 @@
       <li><a href="#tips">Practical Tips</a></li>
     </ul>
   </nav>
+</div>
 </header>
     <!-- =========================================================
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
 <main>
-<section>
+<section class="hero">
+
+  <div class="hero-content">
   <h1>New York City Travel Guide</h1>
 
-  <p>A practical guide to exploring New York City for the first time.</p>
-  <p><a href="#highlights">Get started</a></p>
+  <p class="hero-subhead">A practical guide to exploring New York City for the first time.</p>
+  <p><a href="#highlights" class="btn-dark">Get started</a></p>
+</div>
   <img src="images/heroimage.jpg" alt="Wide landscape view of the NYC" width="1200" height="600"> 
 </section>
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
-<section id="highlights">
+
+  <div class="container">
+<section id="highlights" class="features">
     <h2>Top Highlights</h2>
-<section>
+    <div class="features-grid">
+<section class="feature">
   <img src="images/landmark.jpg" alt="Landmark icon" width="40" height="40">
   <h3>Iconic Landmarks</h3>
   <p> Visit Central Park, Times Square, and the Statue of Liberty to experience the city’s most famous sights.</p>
 </section>
 
-<section>
+<section class="feature">
   <img src="images/museum.jpg" alt="Museum icon" width="40" height="40">
   <h3>Culture & Museums</h3>
   <p>Explore The Met, Moma, and Broadway shows.</p>
 </section>
 
-<section>
+<section class="feature">
   <img src="images/food.jpg" alt="Food icon" width="40" height="40" >
     <h3>Food & Local Flavor</h3>
     <p>Try classic New York pizza and Chinatown eats.</p>
   </section>
+</div>
 </section>
 
-<section id="featured">
-  <h2>Featured Neighborhood: Lower Manhattan</h2>
+<section id="featured" class="featured">
+  <h2 class="section-title">Featured Neighborhood: Lower Manhattan</h2>
 
-  <p>
+  <p class="section-lede">
     Lower Manhattan combines history, skyline views, and vibrant neighborhoods. Walk across the Brooklyn Bridge, visit the Financial District, and explore Chinatown all in one afternoon.
   </p>
-
+  <div class="media">
   <img src="images/manhattan.jpg" alt="Manhattan Night" width="1000">
+</div>
 </section>
 
     <!-- =========================================================
@@ -73,35 +85,52 @@
     ========================================================= -->
 <section id="explore">
   <h2>Places to Explore</h2>
-  <section>
-      <img src="images/midtown.jpg" alt="View of Midtown Manhattan with red brick buildings and street traffic below" width="350" height="250">
+
+  <div class="secondary-grid">
+  <section class="card">
+    <div class="card-image">
+      <img src="images/midtown.jpg" alt="View of Midtown Manhattan with red brick buildings and street traffic below" >
+    </div>
+    <div class="card-text">
       <h3>Midtown Essentials</h3>
     <p>Discover Rockefeller Center, Fifth Avenue shopping, and quick access to Central Park.</p>
+  </div>
   </section>
-  <section>
-    <img src="images/brooklyn.jpg" alt="Street view of Brooklyn with mural artwork and city traffic at Bedford Avenue" width="350" height="250">
+  <section class="card">
+    <div class="card-image">
+<img src="images/brooklyn.jpg" alt="Street view of Brooklyn with mural artwork and city traffic at Bedford Avenue" >
+</div>
+<div class="card-text">
     <h3>Brooklyn Afternoon</h3>
     <p>Enjoy waterfront views in Dumbo and relax in Brooklyn Bridge Park with stunning skyline scenery.</p>
+  </div>
   </section>
+</div>
   </section>
 
-<section id="tips">
+<section id="tips" > 
   <h2>Practical Tips for Visitors</h2>
   <p>Plan ahead, use public transportation, and book popular attractions in advance to save time.</p>
 </section>
-<section>
+
+<section class="cta">
+<div class="cta-inner">
   <h2>Heard enough?</h2>
   <p>Ready to explore New York City for yourself? Start with the highlights and plan your perfect day.</p>
-  <p><a href="#highlights">Start Exploring</a></p>
+  <p><a href="#highlights" class="btn-dark">Start Exploring</a></p>
 </section>
+</div>
 </main>
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
-<footer>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
   <p> © NYC Travel Guide. All rights reserved.</p>
+</div>
 
-  <nav aria-label="Footer navigation">
+  <nav class="fooiter-nav" aria-label="Footer navigation">
     <ul>
       <li><a href="#highlights">Highlights</a></li>
       <li><a href="#featured">Neighborhood</a></li>
@@ -109,6 +138,7 @@
       <li><a href="#tips">Practical Tips</a></li>
     </ul>
   </nav>
+</div>
 </footer>
 
 
